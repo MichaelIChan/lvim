@@ -66,7 +66,8 @@ lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+lvim.builtin.nvimtree.setup.view.width = 50
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -177,10 +178,10 @@ lvim.builtin.treesitter.highlight.enable = true
 --   end,
 -- })
 
+require "user.plugins"
 require "user.neovim-session-manager"
 require "user.symbols-outline"
 require "user.indent_blankline"
 require "user.options"
 require "user.keymaps"
-require "user.plugins"
 require "user.whichkey"
