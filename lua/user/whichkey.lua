@@ -1,8 +1,4 @@
-lvim.builtin.which_key.mappings.l = vim.tbl_extend("keep", lvim.builtin.which_key.mappings.l ,
-  {
-    o = { "<cmd>SymbolsOutline<cr>", "Open Outline" }
-  }
-)
+lvim.builtin.which_key.mappings["o"] = { "<cmd>SymbolsOutline<CR>", "Outline" }
 
 lvim.builtin.which_key.mappings["t"] = {
     name = "Trouble",
